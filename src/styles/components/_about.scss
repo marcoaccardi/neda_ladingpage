@@ -1,5 +1,14 @@
 .about__container {
   padding: 3rem;
+  h1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
   @include med {
     display: flex;
     justify-content: center;
