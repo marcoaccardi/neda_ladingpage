@@ -1,6 +1,6 @@
-@import "abstracs/variables", "abstracts/mixins";
+@import "abstracts/variables", "abstracts/mixins";
 
 @import "components/header", "components/about", "components/consortium",
   "components/footer", "components/opencall";
 
-@import "base/base";
+@import "base/base", "base/reset";
