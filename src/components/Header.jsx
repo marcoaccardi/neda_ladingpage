@@ -9,7 +9,7 @@ const Header = () => {
         </video>
         <div>
           <h1>Network for European Digital Arts</h1>
-          <h2>A place where people meet science, art and technology</h2>
+          <h2>A place where people meet science, art and technology.</h2>
         </div>
       </header>
     </>
