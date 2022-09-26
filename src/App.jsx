@@ -1,20 +1,9 @@
 import "./styles/main.scss";
-import {
-  Header,
-  About,
-  Consortium,
-  OpenCall,
-  Footer,
-} from "./components/index";
-
+import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <Header />
-      <About />
-      <Consortium />
-      <OpenCall />
-      <Footer />
+      <Home />
     </>
   );
 }

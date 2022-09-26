@@ -1,10 +1,12 @@
 .footer__container {
   background: black;
-  padding: 6rem 0;
+  padding: 1rem 6rem;
+  margin: 0;
 
   h1 {
+    padding-top: 6rem;
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
@@ -14,6 +16,7 @@
     flex: column;
     justify-content: center;
     padding-left: 5rem;
+    padding-bottom: 6rem;
   }
   &-logo {
     width: 100%;
@@ -32,14 +35,24 @@
     color: white;
     padding: 0 3rem;
     h3 {
+      font-size: 1.8rem;
       padding-bottom: 1.5rem;
+    }
+    li {
+      font-size: 1.5rem;
+      font-weight: 200;
     }
   }
   &-about {
     color: white;
     padding: 0 3rem;
     h3 {
+      font-size: 1.8rem;
       padding-bottom: 1.5rem;
+    }
+    li {
+      font-size: 1.5rem;
+      font-weight: 200;
     }
   }
 }

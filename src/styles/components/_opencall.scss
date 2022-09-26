@@ -1,31 +1,74 @@
-.opencall__container {
-  padding: 3rem;
+.opencall {
+  padding: 9rem 6rem;
+  background-color: black;
+  color: rgb(221, 221, 221);
+
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
   }
-  &-image {
-    padding-bottom: 3rem;
-  }
-  &-text {
-    h1 {
-      padding-bottom: 3rem;
+  &__container {
+    @include small {
     }
-    p {
-      text-align: justify;
-      font-size: 2rem;
-      font-weight: 200;
-      padding-bottom: 3rem;
+    @include med {
     }
-  }
-  &-button {
-    display: flex;
-    justify-content: center;
-    button {
-      background-color: white;
-      padding: 1rem 2rem;
+    @include xxl {
+      padding: 3rem 6rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-image {
+      padding-bottom: 3rem 0;
+      @include xxl {
+        width: 50vw;
+      }
+    }
+    &-text {
+      @include xxl {
+        padding-top: 0;
+        width: 50vw;
+        padding-top: 6rem;
+        padding-left: 6rem;
+      }
+      @include small {
+        padding: 0;
+      }
+      @include med {
+        padding: 0;
+      }
+
+      p {
+        @include xxl {
+          padding-top: 0;
+        }
+        @include xl {
+          padding-left: 3rem;
+        }
+
+        padding-top: 6rem;
+        text-align: justify;
+        font-size: 2rem;
+        font-weight: 200;
+        padding-bottom: 3rem;
+      }
+    }
+    &-button {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      button {
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 1rem 3rem;
+        color: white;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
   }
 }

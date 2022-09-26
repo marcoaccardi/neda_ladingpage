@@ -1,24 +1,24 @@
 //MEDIA QUERIES
-@mixin med {
-  @media screen and (min-width: 768px) {
+@mixin small {
+  @media screen and (max-width: 375px) {
     @content;
   }
 }
 
-@mixin lg {
-  @media screen and (min-width: 992px) {
+@mixin med {
+  @media screen and (max-width: 650px) {
     @content;
   }
 }
 
 @mixin xl {
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 850px) {
     @content;
   }
 }
 
 @mixin xxl {
-  @media screen and (min-width: 1441px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

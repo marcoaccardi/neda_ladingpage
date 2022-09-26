@@ -1,13 +1,36 @@
 .consortium__container {
+  padding: 9rem 0;
+
   h1 {
-    font-size: 3rem;
+    @include small {
+      font-size: 3rem;
+    }
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
   }
+
   .cards__container {
+    // padding: 3rem;
     display: flex;
     align-items: baseline;
-    padding: 3rem;
+    padding: 3rem 35rem;
+    @include small {
+      display: flex;
+      flex-direction: column;
+      padding: 6rem 10rem;
+    }
+    @include xl {
+      display: flex;
+      align-items: baseline;
+      padding: 3rem 6rem;
+    }
+    @include xxl {
+      display: flex;
+      align-items: baseline;
+      padding: 3rem 35rem;
+      // justify-content: center;
+    }
   }
 }
