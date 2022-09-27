@@ -9,15 +9,36 @@ const Footer = () => {
       <hr />
       <h1>NEDA</h1>
       <div className='footer__container-logo'>
-        <BsFacebook size={35} className='logo' />
-        <BsInstagram size={35} className='logo' />
-        <BsLinkedin size={35} className='logo' />
+        <a
+          href='https://www.facebook.com/clhubart'
+          target='_blank'
+          style={{ cursor: "pointer" }}
+        >
+          <BsFacebook size={35} className='logo' />
+        </a>
+        <a
+          href='https://www.instagram.com/clhub.art/'
+          target='_blank'
+          style={{ cursor: "pointer" }}
+        >
+          <BsInstagram size={35} className='logo' />
+        </a>
+        <a
+          href='https://www.linkedin.com/company/clhub-art/'
+          target='_blank'
+          style={{ cursor: "pointer" }}
+        >
+          <BsLinkedin size={35} className='logo' />
+        </a>
       </div>
       <div className='footer__container-links'>
         <div className='footer__container-browse'>
           <ul>
             <h3>BROWSE</h3>
-            <li>Open Calls</li>
+
+            <li>
+              <Link to='/'>Open Calls</Link>
+            </li>
             {/* <li>Projects</li>
               <li>Artists</li>
               <li>Venues</li>
