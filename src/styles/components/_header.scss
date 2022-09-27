@@ -7,30 +7,41 @@
     padding-left: 3rem;
     padding-right: 3rem;
     font-size: 8rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
     text-align: center;
     font-weight: 500;
     color: rgb(26, 25, 25);
-
+    @include xxl {
+      padding-top: 35rem;
+    }
+    @include xl {
+      padding-top: 25rem;
+    }
     @include small {
-      padding-top: 15rem;
+      padding-top: 25rem;
       font-size: 4rem;
     }
     @include med {
-      padding-top: 15rem;
+      padding-top: 30rem;
       font-size: 4rem;
     }
   }
   h2 {
     padding-top: 5rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 200;
     padding-left: 3rem;
     padding-right: 3rem;
     color: rgb(26, 25, 25);
-    @include small {
+    @include xxl {
       padding-top: 3rem;
+      font-size: 3rem;
+    }
+    @include small {
+      font-size: 2rem;
+    }
+    @include med {
       font-size: 2rem;
     }
   }

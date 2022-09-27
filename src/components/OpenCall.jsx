@@ -1,15 +1,15 @@
 import React from "react";
-import imageOne from "../assets/about/imageOne.jpeg";
+import imageTwo from "../assets/about/imageTwo.jpeg";
 
 const OpenCall = () => {
   return (
     <section className='opencall'>
-      <h1>Open Call for Artist</h1>
       <div className='opencall__container'>
         <div className='opencall__container-image'>
-          <img src={imageOne} alt='' />
+          <img src={imageTwo} alt='' />
         </div>
         <div className='opencall__container-text'>
+          <h1>Open Call for Artist</h1>
           <p>
             This open call is for artists who want to participate in one of the
             four NEDA events that will take place in 2023. In 2023, NEDA will
@@ -30,7 +30,11 @@ const OpenCall = () => {
       </div>
       <div className='opencall__container-button'>
         <button>
-          <a href='https://www.clhub.art/submit-a-brief' target='_blank'>
+          <a
+            rel='noreferrer'
+            href='https://www.clhub.art/submit-a-brief'
+            target='_blank'
+          >
             APPLY
           </a>
         </button>

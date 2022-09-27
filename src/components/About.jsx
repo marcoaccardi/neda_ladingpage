@@ -4,12 +4,12 @@ import imageTwo from "../assets/about/imageTwo.jpeg";
 const About = () => {
   return (
     <section className='about'>
-      <h1>About</h1>
       <div className='about__container'>
         <div className='about__container-imageOne'>
           <img src={imageOne} alt='' />
         </div>
         <div className='about__container-text'>
+          <h1>About</h1>
           <p>
             The driving idea behind the development of NEDA is not only to be
             part of but also play an essential and active role in the social

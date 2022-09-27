@@ -5,10 +5,13 @@
 
   h1 {
     font-size: 5rem;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: 500;
-    padding-bottom: 6rem;
+    @include xxl {
+      padding-bottom: 3rem;
+    }
+    // padding-bottom: 6rem;
   }
   &__container {
     padding: 0;
@@ -17,31 +20,35 @@
     @include med {
     }
     @include xxl {
-      padding: 3rem 6rem;
+      padding: 3rem 0rem;
       display: flex;
       flex-direction: row;
     }
 
     &-image {
       padding-bottom: 3rem 0;
-
+      display: block;
       @include xxl {
-        width: 50vw;
+        width: 250vw;
       }
     }
     &-text {
+      padding-top: 6rem;
+
       @include small {
+        padding-top: 6rem;
         padding-left: 0;
       }
       @include med {
+        padding-top: 6rem;
         padding-left: 0;
       }
       @include xl {
-        padding-top: 0;
+        padding-top: 6rem;
       }
       @include xxl {
-        padding-top: 0;
-        width: 50vw;
+        padding-top: 0rem;
+        // width: 50vw;
         padding-left: 6rem;
       }
 
