@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+
+import MailTo from "./MailtTo";
 const Footer = () => {
   return (
     <div className='footer__container'>
@@ -25,12 +27,30 @@ const Footer = () => {
         <div className='footer__container-about'>
           <ul>
             <h3>ABOUT</h3>
-            <li to=''>Contact</li>
             <li>
-              <Link to='/privacypolicy'>Privacy PoLinkcy</Link>
+              <MailTo
+                email='info@neda.website'
+                subject='hey!'
+                body='Hello Neda,'
+              >
+                Contact
+              </MailTo>
             </li>
             <li>
-              <Link to='/nondiscrimination'>Non-Discrimination</Link>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to='/privacypolicy'
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to='/nondiscrimination'
+              >
+                Non-Discrimination
+              </Link>
             </li>
             {/* <li>Terms & Conditions</li>
               <li>User Agreement</li> */}

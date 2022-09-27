@@ -2,7 +2,7 @@
   @include small {
     padding: 9rem 0;
   }
-  padding: 9rem 3rem;
+  padding: 6rem 0rem;
   background-color: black;
   color: rgb(221, 221, 221);
   h1 {
@@ -15,8 +15,12 @@
     text-transform: uppercase;
   }
   .about__container {
+    padding: 3rem 6rem;
     @include small {
-      padding: 0rem;
+      padding: 0 3rem;
+    }
+    @include med {
+      padding: 3rem;
     }
 
     @include xl {
@@ -39,9 +43,12 @@
       }
     }
     &-text {
-      padding-top: 0rem;
+      padding-top: 6rem;
       @include small {
         padding: 3rem 0;
+      }
+      @include med {
+        padding-top: 6rem;
       }
       @include xl {
         padding-top: 6rem;
@@ -50,6 +57,7 @@
       @include xxl {
         flex: 2;
         padding-left: 3rem;
+        padding-top: 0rem;
       }
 
       text-align: justify;

@@ -8,8 +8,10 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
+    padding-bottom: 6rem;
   }
   &__container {
+    padding: 0;
     @include small {
     }
     @include med {
@@ -22,30 +24,39 @@
 
     &-image {
       padding-bottom: 3rem 0;
+
       @include xxl {
         width: 50vw;
       }
     }
     &-text {
+      @include small {
+        padding-left: 0;
+      }
+      @include med {
+        padding-left: 0;
+      }
+      @include xl {
+        padding-top: 0;
+      }
       @include xxl {
         padding-top: 0;
         width: 50vw;
-        padding-top: 6rem;
         padding-left: 6rem;
-      }
-      @include small {
-        padding: 0;
-      }
-      @include med {
-        padding: 0;
       }
 
       p {
-        @include xxl {
-          padding-top: 0;
+        @include small {
+          padding-left: 0;
+        }
+        @include med {
+          padding-left: 0;
         }
         @include xl {
-          padding-left: 3rem;
+          padding-left: 0rem;
+        }
+        @include xxl {
+          padding-top: 0;
         }
 
         padding-top: 6rem;
