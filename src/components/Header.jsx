@@ -12,7 +12,7 @@ const Header = () => {
       <video autoPlay loop muted id='myVideo'>
         <source src={video} type='video/mp4' />
       </video>
-      <div>
+      <div className='header__text'>
         <h1 ref={title}>Network for European Digital Arts</h1>
         <h2>A place where people meet science, art and technology.</h2>
       </div>

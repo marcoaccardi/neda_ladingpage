@@ -1,6 +1,5 @@
 import React from "react";
 import imageOne from "../assets/about/imageOne.jpeg";
-import imageTwo from "../assets/about/imageTwo.jpeg";
 const About = () => {
   return (
     <section className='about'>

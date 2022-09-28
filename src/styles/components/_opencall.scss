@@ -1,76 +1,68 @@
 .opencall {
-  padding: 9rem 6rem;
+  padding: 9rem 0rem;
   background-color: black;
   color: rgb(221, 221, 221);
-
+  @include med {
+    padding: 6rem 0rem;
+  }
   h1 {
     font-size: 5rem;
     text-align: left;
     text-transform: uppercase;
     font-weight: 500;
-    @include xxl {
-      padding-bottom: 3rem;
-    }
+    padding-bottom: 3rem;
+
     // padding-bottom: 6rem;
   }
-  &__container {
-    padding: 0;
-    @include small {
-    }
+  .opencall__container {
+    padding: 3rem 2rem;
+
     @include med {
+      padding: 3rem;
+    }
+
+    @include xl {
+      padding: 3rem 6rem;
     }
     @include xxl {
-      padding: 3rem 0rem;
+      padding: 3rem 6rem;
       display: flex;
       flex-direction: row;
     }
 
     &-image {
-      padding-bottom: 3rem 0;
-      display: block;
-      @include xxl {
-        // width: 250vw;
-      }
+      // padding-bottom: 3rem 0;
+      width: 50%;
     }
     &-text {
       padding-top: 6rem;
+      font-size: 1.2rem;
+      font-weight: 200;
+      text-align: justify;
+      // padding-bottom: 3rem;
 
-      @include small {
-        padding-top: 6rem;
-        padding-left: 0;
-      }
       @include med {
         padding-top: 6rem;
-        padding-left: 0;
+        font-size: 2rem;
+
+        font-size: 2rem;
       }
       @include xl {
         padding-top: 6rem;
       }
       @include xxl {
+        flex: 2;
+        padding-left: 3rem;
         padding-top: 0rem;
-        // width: 50vw;
-        padding-left: 6rem;
+        width: 50vw;
       }
 
       p {
-        @include small {
-          padding-left: 0;
-        }
-        @include med {
-          padding-left: 0;
-        }
-        @include xl {
-          padding-left: 0rem;
-        }
-        @include xxl {
-          padding-top: 0;
-        }
+        line-height: 1.8rem;
 
-        padding-top: 6rem;
-        text-align: justify;
-        font-size: 2rem;
-        font-weight: 200;
-        padding-bottom: 3rem;
+        @include med {
+          line-height: 2.3rem;
+        }
       }
     }
     &-button {

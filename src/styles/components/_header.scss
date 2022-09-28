@@ -1,56 +1,47 @@
 .header {
   height: 100vh;
   width: 100vw;
-
-  h1 {
-    padding-top: 25rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 8rem;
-    padding-bottom: 0rem;
-    text-align: center;
-    font-weight: 500;
-    color: rgb(26, 25, 25);
-    @include xxl {
-      padding-top: 35rem;
-    }
-    @include xl {
-      padding-top: 25rem;
-    }
-    @include small {
-      padding-top: 15rem;
+  &__text {
+    padding: 15rem 2rem 0 2rem;
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      color: rgb(26, 25, 25);
       font-size: 4rem;
+      @include xl {
+        padding-top: 25rem;
+        font-size: 8rem;
+      }
+      @include med {
+        font-size: 5rem;
+      }
     }
-    @include med {
-      padding-top: 20rem;
-      font-size: 4rem;
+    h2 {
+      padding-top: 5rem;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 200;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: rgb(26, 25, 25);
+      @include xl {
+        padding-top: 3rem;
+        font-size: 3rem;
+      }
+      @include small {
+        font-size: 2rem;
+      }
+      @include med {
+        font-size: 2rem;
+      }
     }
   }
-  h2 {
-    padding-top: 5rem;
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 200;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    color: rgb(26, 25, 25);
-    @include xxl {
-      padding-top: 3rem;
-      font-size: 3rem;
-    }
-    @include small {
-      font-size: 2rem;
-    }
-    @include med {
-      font-size: 2rem;
-    }
+  #myVideo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    object-fit: cover;
   }
-}
-#myVideo {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.7;
-  z-index: -1;
-  object-fit: cover;
 }

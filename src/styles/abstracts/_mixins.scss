@@ -1,18 +1,18 @@
 //MEDIA QUERIES
 @mixin small {
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) {
     @content;
   }
 }
 
 @mixin med {
-  @media screen and (max-width: 650px) {
+  @media screen and (min-width: 650px) {
     @content;
   }
 }
 
 @mixin xl {
-  @media screen and (max-width: 850px) {
+  @media screen and (min-width: 850px) {
     @content;
   }
 }

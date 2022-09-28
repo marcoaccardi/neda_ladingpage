@@ -5,7 +5,7 @@ import anecoica from "../assets/logos/anecoica-logo.png";
 import clhub from "../assets/logos/clhub_art-logo.png";
 import funzionicontinue from "../assets/logos/funzioni_continue-logo.png";
 import studiok from "../assets/logos/studiok-logo.png";
-import sode from "../assets/logos/sode.png";
+import sode from "../assets/logos/sode-logo2.jpg";
 
 const Consortium = () => {
   return (
